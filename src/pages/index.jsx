@@ -1,6 +1,8 @@
 import * as React from "react"
+import Layout from "../content/layout"
 
 const pageStyles = {
+  backgroundWidth: "100%",
   color: "#232129",
   padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
@@ -124,6 +126,7 @@ const links = [
 
 const IndexPage= () => {
   return (
+    <Layout>
     <main style={pageStyles}>
       <h1 style={headingStyles}>
         DIVEST MINNESOTA FROM APARTHEID ISRAEL
@@ -161,6 +164,7 @@ const IndexPage= () => {
         ))}
       </ul>
     </main>
+    </Layout>
   )
 }
 
