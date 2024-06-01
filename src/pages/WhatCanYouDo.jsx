@@ -2,11 +2,9 @@ import * as React from "react"
 import WhatCanYouDo from '../content/WhatCanYouDoContent.mdx'
 
 const pageStyles = {
-    background: "#F6EEC9",
-    color: "#232129",
     padding: 96,
     fontFamily: "-apple-system, Roboto, sans-serif, serif",
-    maxWidth: 500,
+    maxWidth: 600,
 }
 
 const WhatCanYouDoPage = () => {

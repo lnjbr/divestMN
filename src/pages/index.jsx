@@ -2,15 +2,14 @@ import * as React from "react"
 import Layout from "../content/layout"
 
 const pageStyles = {
-  backgroundWidth: "100%",
-  color: "#232129",
   padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  maxWidth: 600,
 }
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 320,
+  maxWidth: 600,
 }
 
 const paragraphStyles = {

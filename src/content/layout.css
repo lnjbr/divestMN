@@ -1,0 +1,19 @@
+body {
+    background-color: #ffffff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: rgb(255, 88, 88);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 10px;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 3em;
+}
+p {  
+    font-weight: 300;
+    max-width: 560;
+    margin-bottom: 30;
+}
