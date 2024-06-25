@@ -1,19 +1,229 @@
 body {
-    background-color: #ffffff;
+    background-color: #b82d20;
+    align-content: center;
+    border: "1em, solid, red";
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-image: url("https://i.imgur.com/lMxoZYz.png");
+    margin: 0px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    color: rgb(255, 88, 88);
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    font-weight: 10px;
+main {
+    margin: 2% 15%;
+    padding-top: 64px;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, Roboto, sans-serif, serif;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%
+}
+.navItem {
+    margin: auto;
+    flex-grow: 1;
+}
+
+.navButton {
+    color: #8A6534;
+    padding: 10px;
+    background-color: #FFF4DB;
+    font-size: 1.25rem;
+    border-radius: 4px;
     font-style: italic;
 }
 
-h1 {
+.learnMoreButton {
+    padding: 10px;
+    background-color: #80b287;
+    font-size: 1.25rem;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.sectionGrid {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    border: solid #7fce9a;
+    border-width: 0 0.2em 0.2em 0;
+    border-radius: 3px;
+    background-color: #ffffe4;
+    margin-bottom: 50px;
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sectionGrid > div {
+    flex: 1 1 auto;
+    padding: 5px;
+}
+
+.text {
+    /* margin: auto; */
+    /* width: 80%; */
+
+    display: flex;
+    flex-direction: column;
+    /* font-size: larger; */
+    /* justify-content: flex-end; */
+}
+
+.photoGrid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row-wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photoGrid > .photo {
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    max-width: 100%;
+    border: solid #124a39;
+    ;
+}
+
+
+.photoGrid  > .four {
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    max-width: 100%;
+    float: left;
+    width:  150px;
+    height: 300px;
+    object-fit: cover;
+    border: solid #124a39;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    /* font-weight: 3em; */
+    font-style: italic;
     font-size: 3em;
 }
+
+
+header {
+    display:flex;
+    flex-direction: rows;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 10%;
+    background-color: #124a39;
+    padding-top: 100px;   
+}
+
+footer {
+    display:flex;
+    flex-direction: rows;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #124a39;
+    margin: 0;
+    padding: 20px;
+}
+
+h2,h3,h4,h5,h6 {
+    color: #124a39;
+    text-shadow: 0.5px 0.5px 2px #6e542e;
+}
+
+h1 {
+    position: relative;
+    min-width: 100%;
+    color: #ffffe4;
+    text-shadow: 1px 1px 2px #6e542e;
+    margin-top: 0;
+    margin-bottom: 64px;
+    text-align: center;
+    width: 100%
+}
+h2 {
+    font-size: 2em;
+}
+
+h3,h4 {
+    font-size: 1.75em;
+}
+
 p {  
-    font-weight: 300;
-    max-width: 560;
-    margin-bottom: 30;
+    font-size: 1.5em;
+    /* margin-bottom: 30; */
+    padding-left: 5px;
+}
+
+@media all and (max-width: 800px) and (min-width: 200px) {
+    main {
+        margin: 1% 0%;
+    }
+    .nav {
+        width: 100%;
+    }
+
+    .photoGrid  > .four {
+        display: flex;
+        flex-direction: row;
+        margin: 1px;
+        max-width: 100%;
+        float: left;
+        width:  110px;
+        height: 200px;
+        object-fit: cover;
+        border: solid #124a39;
+    
+    }
+
+    .photoGrid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .photoGrid > .four {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 37%;
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+}
+  
+
+@media all and (max-width: 1200px) and (min-width: 800px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+/*  */
+
+
+.corporation {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 28px;
+    margin-top: 25px;
+}
+.dollarsInvested {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: -15px;
 }
